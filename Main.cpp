@@ -1,19 +1,19 @@
 #include <gtest/gtest.h>
 
-int multiply(int a, int b) {
-    return a * b;
+int add(int a, int b) {
+    return a + b;
 }
 
-TEST(multiply, positive) {
-    EXPECT_EQ(multiply(3, 4), 12);
+TEST(add, positive) {
+    EXPECT_EQ(add(3, 4), 12);
 }
 
-TEST(multiply, negative) {
-    EXPECT_EQ(multiply(-3, 4), -12);
+TEST(add, negative) {
+    EXPECT_EQ(add(-3, 4), -12);
 }
 
-TEST(multiply, zero) {
-    EXPECT_EQ(multiply(0, 10), 0);
+TEST(add, zero) {
+    EXPECT_EQ(add(0, 10), 0);
 }
 
 int main(int argc, char **argv) {
